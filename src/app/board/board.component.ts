@@ -16,8 +16,8 @@ export class BoardComponent implements OnInit {
   ngOnInit(): void {
     const shuffledTiles = this.service.shuffle(TILES);
     const shuffledNumbers = this.service.shuffle(TILES_NUMBERS);
-    this.tileRows = this.service.splitRows(
-      this.service.setupTiles(shuffledTiles, shuffledNumbers)
-    );
+    const tiles = this.service.setupTiles(shuffledTiles, shuffledNumbers);
+
+    this.tileRows = this.service.splitTiles(tiles);
   }
 }

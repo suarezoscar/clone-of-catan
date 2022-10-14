@@ -33,7 +33,7 @@ export class BoardService {
     }));
   }
 
-  splitRows(tiles: Tile[]): TileRow {
+  splitTiles(tiles: Tile[]): TileRow {
     const rows: TileRow = {
       first: tiles.splice(0, 3),
       second: tiles.splice(0, 4),
