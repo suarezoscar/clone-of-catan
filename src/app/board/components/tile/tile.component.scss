@@ -1,0 +1,58 @@
+@import '/src/styles/colors.scss';
+
+.hex {
+  float: left;
+  margin-left: 0.1875em;
+  margin-bottom: -1.625em;
+  overflow: hidden;
+
+  .top {
+    width: 0;
+    border-bottom: 1.875em solid #6c6;
+    border-left: 3.25em solid transparent;
+    border-right: 3.25em solid transparent;
+  }
+
+  .mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.5em;
+    height: 3.75em;
+    background-color: #6c6;
+  }
+
+  .bot {
+    width: 0;
+    border-top: 1.875em solid #6c6;
+    border-left: 3.25em solid transparent;
+    border-right: 3.25em solid transparent;
+  }
+
+  .number {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    box-shadow: 0.2em 0.2em 1em rgba($color: $darkGreen, $alpha: 0.5);
+    border-radius: 100%;
+    background-color: $grey;
+    opacity: 0.8;
+    color: $darkGreen;
+    font-weight: bolder;
+    user-select: none;
+    font-size: 1em;
+
+    &.red {
+      background-color: $red;
+      color: $white;
+    }
+  }
+
+  svg-icon {
+    position: absolute;
+  }
+}

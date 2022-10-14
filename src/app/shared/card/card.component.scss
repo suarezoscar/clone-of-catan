@@ -1,0 +1,30 @@
+@import '/src/styles/colors.scss';
+
+.card {
+  width: 6em;
+  height: 9em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.3em rgba($color: $darkBlue, $alpha: 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2e9e4;
+  user-select: none;
+  padding: 0.5em;
+
+  & .content {
+    padding: 1em;
+  }
+
+  & .title {
+    font-size: 1.5em;
+    color: $darkBlue;
+    text-align: center;
+  }
+
+  & .footer {
+    font-size: 0.6em;
+    text-align: center;
+  }
+}

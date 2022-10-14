@@ -1,0 +1,21 @@
+<div class="board">
+  <div class="hex-row">
+    <app-tile *ngFor="let tile of tileRows?.first" [tile]="tile"></app-tile>
+  </div>
+
+  <div class="hex-row even">
+    <app-tile *ngFor="let tile of tileRows?.second" [tile]="tile"></app-tile>
+  </div>
+
+  <div class="hex-row middle">
+    <app-tile *ngFor="let tile of tileRows?.third" [tile]="tile"></app-tile>
+  </div>
+
+  <div class="hex-row even">
+    <app-tile *ngFor="let tile of tileRows?.fourth" [tile]="tile"></app-tile>
+  </div>
+
+  <div class="hex-row">
+    <app-tile *ngFor="let tile of tileRows?.fifth" [tile]="tile"></app-tile>
+  </div>
+</div>

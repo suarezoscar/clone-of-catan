@@ -1,0 +1,14 @@
+.board {
+  margin-left: 6.625em;
+  .hex-row {
+    clear: left;
+
+    &.even {
+      margin-left: -3.3125em;
+    }
+
+    &.middle {
+      margin-left: -6.625em;
+    }
+  }
+}

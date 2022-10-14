@@ -1,0 +1,26 @@
+<div class="hex" draggable="false">
+  <div class="top"></div>
+  <div class="mid" draggable="false">
+    <svg-icon
+      *ngIf="tile.haveBurglar"
+      [src]="burglar"
+      [svgStyle]="{
+        'width.em': 4,
+        'height.em': 4
+      }"></svg-icon>
+
+    <svg-icon
+      [src]="icon"
+      [svgStyle]="{ 'width.em': 5, 'height.em': 4 }"></svg-icon>
+
+    <span
+      draggable="false"
+      class="number"
+      [ngClass]="{
+        red: tile.ressourceNumber === 6 || tile.ressourceNumber === 8
+      }"
+      >{{ tile.ressourceNumber }}</span
+    >
+  </div>
+  <div class="bot"></div>
+</div>
